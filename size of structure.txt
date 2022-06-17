@@ -1,0 +1,29 @@
+#include <stdio.h>
+struct student{
+char name[11];
+int prn;
+char barnch[15];
+
+ };
+
+ union student2{
+  char name [11];
+  int prn;
+  char branch[15];
+
+ };
+
+
+
+int main()
+
+{
+union student2 u;
+struct student s;
+
+ printf("the size of struct is %d \n",sizeof(s)); 
+printf("the size of union is %d\n",sizeof(u));
+
+return 0;
+
+}
